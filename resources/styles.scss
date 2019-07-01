@@ -19,7 +19,6 @@ body {
 
 h1, h2 {
     font-size: 20px;
-    padding: 10px;
 }
 
 .box {
@@ -29,6 +28,19 @@ h1, h2 {
     margin-top: 10px;
 }
 
+.about {
+    text-align: center;
+}
+
 .workshops {
     background: $fade-orange;
+}
+
+.carousel {
+    text-align: center;
+    max-width: 400px;
+}
+
+.testimonial {
+    width: 300px;
 }

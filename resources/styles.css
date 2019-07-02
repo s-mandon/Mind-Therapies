@@ -18,6 +18,10 @@ h1, h2 {
   text-align: center;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); }
 
+h4, h6 {
+  font-weight: bold;
+  line-height: 10px; }
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,6 +193,8 @@ nav {
   transition: opacity 0.2s linear; }
 
 .carousel-inner {
+  font-size: 12px;
+  line-height: 15px;
   -webkit-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5); }
@@ -200,7 +206,7 @@ nav {
 .testimonial {
   max-width: 100%;
   max-height: auto;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px; }
 
 .test-1 {

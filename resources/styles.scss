@@ -97,6 +97,7 @@ h1, h2 {
 
 .about {
     text-align: center;
+    padding: 10px;
 }
 
 .carousel-control {
@@ -120,7 +121,7 @@ h1, h2 {
 
 .carousel {
     text-align: center;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .icon-next {
@@ -136,8 +137,28 @@ h1, h2 {
     max-width: 300px;
     max-height: auto;
     padding: 10px;
-    background: #ddd4cf;
     border-radius: 5px;
+}
+
+.test-1 {
+    background: $fade-blue;
+}
+
+.test-2 {
+    background: $fade-orange;
+}
+
+.test-3 {
+    background: #ddd4cf;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    background: #DEDCE6;
+    width: 100%;
 }
 
 #menuToggle

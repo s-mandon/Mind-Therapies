@@ -1,27 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap");
 * {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0 auto; }
 
-.nav {
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end; }
-
-.navbar {
-  height: 60px; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 h1, h2 {
   font-size: 20px; }
 
+.banner {
+  max-width: 100%;
+  height: 200px;
+  padding: 0;
+  margin: 0 auto;
+  background-image: url(/resources/bg5.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 .box {
   padding: 10px;
-  border: 1px solid #000;
   border-radius: 5px;
   margin-top: 10px; }
 
@@ -31,33 +44,37 @@ h1, h2 {
 .workshops {
   background: #f2d3b3; }
 
-.signature {
-  font-size: 16px;
-  text-align: right;
-  line-height: 8px; }
+.services {
+  background: #ddd4cf; }
+
+.contact {
+  background: #c3dfe0; }
+
+.payment {
+  background: #e9ecee; }
+
+.btn {
+  background: transparent;
+  border: none;
+  font-size: 20px; }
 
 .carousel-control {
   /* position: absolute; */
   /* top: 40%; */
-  width: 60px;
-  height: 60px;
-  margin-top: -20px;
+  width: 40px;
+  height: 40px;
+  top: 200px;
   font-size: 60px;
   font-weight: 100;
   line-height: 30px;
   color: #ffffff;
   text-align: center;
-  background: #222222;
-  -webkit-border-radius: 23px;
-  -moz-border-radius: 23px;
-  border-radius: 23px;
+  background: #fff;
+  border-radius: 0;
+  border: none;
   opacity: 0.5;
-  filter: alpha(opacity=50); }
-
-.fa-arrow-square-right {
-  width: 60px;
-  height: 60px;
-  color: #000; }
+  -webkit-filter: none;
+  filter: none; }
 
 .carousel {
   text-align: center;
@@ -83,7 +100,7 @@ h1, h2 {
   position: fixed;
   grid-area: menu;
   top: 20px;
-  left: 50px;
+  left: 20px;
   z-index: 2;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -158,10 +175,10 @@ h1, h2 {
 #menu {
   z-index: 1;
   position: fixed;
-  width: 120px;
+  width: 150px;
   height: 220px;
   border-radius: 1px;
-  margin: 17px 0 0 -50px;
+  margin: 20px 0 0 -20px;
   background: transparent;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;

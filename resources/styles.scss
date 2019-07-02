@@ -101,20 +101,18 @@ h1, h2 {
 }
 
 .carousel-control {
-    /* position: absolute; */
-    /* top: 40%; */
     width: 40px;
     height: 40px;
-    top: 200px;
+    top: 240px;
     font-size: 60px;
     font-weight: 100;
     line-height: 30px;
     color: #ffffff;
     text-align: center;
     background: #fff;
-    border-radius: 0;
+    border-radius: 100;
     border: none;
-    opacity: 0.5;
+    opacity: 1;
     filter: none;
 }
 
@@ -124,15 +122,6 @@ h1, h2 {
     max-width: 700px;
 }
 
-.icon-next {
-    position: relative;
-    padding-left: 100px;
-}
-
-.carousel-control-next {
-    right: auto;
-    margin-left: 10px;
-}
 .testimonial {
     max-width: 300px;
     max-height: auto;

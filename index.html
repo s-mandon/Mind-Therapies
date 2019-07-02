@@ -7,29 +7,28 @@
     <title>Mind Therapies</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/styles.css" type="text/css">
-
 </head>
 <body>
-    <div class="container-fluid">
-        <nav>
-        <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-              </ul>
-            </nav>
-            </div>
+    <div class="container-fluid nav-container">
+        <nav class="navbar navbar-fixed-top">
+            <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                    <br>
+                      <a href="#"><li>Home</li></a>
+                      <a href="#"><li>Services</li></a>
+                      <a href="#food"><li>Workshops</li></a>
+                      <a href="#gifts"><li>Be a Hero</li></a>
+                      <a href="#"><li>Get in Touch</li></a>
+                      <br>
+                    </ul>
+                </nav>
+                  </div>
     <div class="jumbotron container-fluid">
         <img src="#" alt="mind therapies logo">
         <p>Lorem ipsum do-lor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.</p>
@@ -73,7 +72,7 @@
 
     <h2>What are clients saying?</h2>
 
-  <div class="jumbotron container wrapper-carousel-fix">
+  <div class="container wrapper-carousel-fix">
     <!-- Carousel Wrapper -->
     <div id="carousel-example-1" class="carousel no-flex testimonial-carousel slide carousel-slide" data-ride="carousel"
       data-interval="false">
@@ -127,21 +126,28 @@
       </div>
       <!--Slides-->
       <!--Controls-->
+      <div class="control-one">
       <a class="carousel-control-prev left carousel-control" href="#carousel-example-1" role="button"
         data-slide="prev">
         <span class="icon-prev" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
+    </div>
+    <div class="control-two">
       <a class="carousel-control-next right carousel-control" href="#carousel-example-1" role="button"
         data-slide="next">
         <span class="icon-next" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
       <!--Controls-->
     </div>
     <!-- Carousel Wrapper -->
   </div>
-  </div>
+  <footer>
+      <img src="#" alt="mind therapies logo">
+      <a href="#">social</a>
+  </footer>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

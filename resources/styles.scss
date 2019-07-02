@@ -17,6 +17,10 @@ body {
  justify-content: end;
 }
 
+.navbar {
+    height: 60px;
+}
+
 h1, h2 {
     font-size: 20px;
 }
@@ -42,8 +46,39 @@ h1, h2 {
     line-height: 8px;
 }
 
+.carousel-control {
+    /* position: absolute; */
+    /* top: 40%; */
+    width: 60px;
+    height: 60px;
+    margin-top: -20px;
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 30px;
+    color: #ffffff;
+    text-align: center;
+    background: #222222;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    border-radius: 23px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.fa-arrow-square-right {
+    width: 60px;
+    height: 60px;
+    color: #000;
+}
+
 .carousel {
     text-align: center;
+    max-width: 600px;
+}
+
+.icon-next {
+    position: relative;
+    padding-left: 100px;
 }
 
 .carousel-control-next {
@@ -52,4 +87,137 @@ h1, h2 {
 }
 .testimonial {
     max-width: 300px;
+    max-height: auto;
+    padding: 10px;
+    background: #ddd4cf;
+    border-radius: 5px;
 }
+
+#menuToggle
+    {
+      display: block;
+      position: fixed;
+      grid-area: menu;
+      top: 20px;
+      left: 50px;
+      z-index: 2;
+      -webkit-user-select: none;
+      user-select: none;
+      color: $main-blue;
+
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; 
+      z-index: 2; 
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: $main-blue;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    /* transform all the slices of hamburger
+      into a crossmark */
+
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: $main-blue;
+    }
+    
+    /* hide the middle one */
+
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    /* the last one goes the other direction */
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    /* make this absolute positioned
+       at the top left of the screen */
+
+    #menu
+    {
+      z-index: 1;
+      position: fixed;
+      width: 120px;
+      height: 220px;
+      border-radius: 1px;
+      margin: 17px 0 0 -50px;
+      background:transparent;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+      background 0.3s linear;
+    }
+    
+    #menu li
+    {
+      text-align: left;
+      padding-left: 10px;
+      font-size: 20px;
+      color: $main-blue;
+      line-height: 30px;
+    }
+
+   #menu.scrolled {
+      background: #277752;
+      transition: 0.3s linear;
+      -webkit-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
+      -moz-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
+      box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
+      }
+
+
+    #menu a {
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    /* to slide the menu in from the left */
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }

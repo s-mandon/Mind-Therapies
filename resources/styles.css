@@ -9,7 +9,8 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0 auto;
-  background: #F7F6FC; }
+  background: #F7F6FC;
+  color: #545454; }
 
 h1, h2 {
   font-weight: 400;
@@ -75,6 +76,8 @@ nav {
     max-width: 100%; }
 
 .box {
+  height: 50px;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px; }
@@ -92,12 +95,46 @@ nav {
   background: #e9ecee; }
 
 .box-text {
-  padding: 10px; }
+  text-align: center;
+  line-height: 20px;
+  max-width: 400px;
+  margin: 0px 10px 0px 10px; }
+
+.fa-chevron-right {
+  font-size: 15px;
+  padding-top: 3px;
+  width: 100px;
+  height: auto;
+  color: #545454;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+
+.fa-chevron-right.open {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  -o-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
 
 .btn {
-  text-align: left;
-  background: transparent;
+  color: #545454;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  background: transparent;
   border: none;
   font-size: 20px;
   text-shadow: none;
@@ -108,7 +145,8 @@ nav {
   background: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
-  outline: none; }
+  outline: none;
+  color: #545454; }
 
 .about {
   text-align: center;

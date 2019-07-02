@@ -17,6 +17,7 @@ body {
     padding: 0;
     margin: 0 auto;
     background: $bg;
+    color: #545454;
 }
 
 h1, h2 {
@@ -48,7 +49,6 @@ nav {
   list-style: none;
 }
 
-
 .nav-container {
   display: flex;
   margin: 0;
@@ -78,6 +78,8 @@ nav {
 }
 
 .box {
+    height: 50px;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
@@ -100,24 +102,44 @@ nav {
 }
 
 .box-text {
-    padding: 10px;
+  text-align: center;
+  line-height: 20px;
+  max-width: 400px;
+  margin: 0px 10px 0px 10px;
+}
+
+.fa-chevron-right{
+  font-size: 15px;
+  padding-top: 3px;
+  width: 100px;
+  height: auto;
+  color: #545454;
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.fa-chevron-right.open{
+  transform: rotate(90deg);
+  transition: transform 0.2s linear;
 }
 
 .btn {
-    text-align: left;
-    background: transparent;
+    color: #545454;
     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background: transparent;
     border: none;
     font-size: 20px;
     text-shadow: none;
     box-shadow: none;
-}
-
+    }
 
 .btn:hover, .btn:active, .btn:focus{
     background:transparent;
     box-shadow: none;
     outline: none;
+    color: #545454;
 }
 
 .about {

@@ -155,15 +155,13 @@ nav {
   padding: 10px; }
 
 .carousel-control {
-  width: 40px;
-  height: 40px;
-  top: 240px;
-  font-size: 60px;
+  top: 230px;
+  font-size: 30px;
   font-weight: 100;
   line-height: 30px;
-  color: #ffffff;
+  color: #545454;
+  background: transparent;
   text-align: center;
-  background: #fff;
   border-radius: 100;
   border: none;
   opacity: 1;

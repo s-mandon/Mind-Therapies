@@ -16,10 +16,38 @@ h1, h2 {
   font-size: 20px;
   text-align: center; }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
 .navbar {
   background: #F7F6FC;
   position: fixed;
   height: 60px; }
+
+.nav-item img {
+  max-width: 50px; }
+
+.nav-item li {
+  list-style: none; }
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  width: 95%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .main-container {
   margin-top: 60px; }

@@ -25,10 +25,35 @@ h1, h2 {
     text-align: center;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .navbar {
     background: $bg;
     position: fixed;
     height: 60px;
+}
+
+  
+  .nav-item {
+  img {
+    max-width: 50px;
+    }
+}
+
+.nav-item li {
+  list-style: none;
+}
+
+
+.nav-container {
+  display: flex;
+  margin: 0;
+  width: 95%;
+  justify-content: space-between;
 }
 
 .main-container {

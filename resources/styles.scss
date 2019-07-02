@@ -36,11 +36,20 @@ h1, h2 {
     background: $fade-orange;
 }
 
-.carousel {
-    text-align: center;
-    max-width: 400px;
+.signature {
+    font-size: 16px;
+    text-align: right;
+    line-height: 8px;
 }
 
+.carousel {
+    text-align: center;
+}
+
+.carousel-control-next {
+    right: auto;
+    margin-left: 10px;
+}
 .testimonial {
-    width: 300px;
+    max-width: 300px;
 }

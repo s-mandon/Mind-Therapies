@@ -151,12 +151,14 @@ nav {
   color: #545454; }
 
 .about {
+  max-width: 400px;
   text-align: center;
   padding: 10px; }
 
 .carousel-control {
-  top: 230px;
   font-size: 30px;
+  top: 180px;
+  width: 100px;
   font-weight: 100;
   line-height: 30px;
   color: #545454;
@@ -164,16 +166,14 @@ nav {
   text-align: center;
   border-radius: 100;
   border: none;
-  opacity: 1;
-  -webkit-filter: none;
-  filter: none; }
+  opacity: 0.5; }
 
 .carousel {
   text-align: center;
-  max-width: 700px; }
+  max-width: 500px; }
 
 .testimonial {
-  max-width: 300px;
+  max-width: 100%;
   max-height: auto;
   padding: 10px;
   border-radius: 5px; }

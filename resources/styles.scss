@@ -40,9 +40,13 @@ nav {
 }
 
 .navbar {
+    z-index: 2;
     background: $bg;
     position: fixed;
     height: 60px;
+    -webkit-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
 }
   .nav-item {
   img {
@@ -79,7 +83,7 @@ nav {
     height: 200px;
     padding: 0;
     margin: 0 auto;
-    background-image: url("https://i.imgur.com/PWxZknH.png");
+    background-image: url("/resources/bg5.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,13 +133,13 @@ nav {
   width: 120px;
   height: auto;
   color: #545454;
-  transform: rotate(0deg);
-  transition: transform 0.2s linear;
+  transform: rotate(90deg);
+  transition: transform 0.3s linear;
 }
 
 .fa-chevron-right.open{
-  transform: rotate(90deg);
-  transition: transform 0.2s linear;
+  transform: rotate(-0deg);
+  transition: transform 0.3s linear;
 }
 
 
@@ -325,12 +329,12 @@ footer img {
 
     #menu
     {
+      top: 60px;
       z-index: 1;
       position: fixed;
       width: 150px;
       height: 200px;
-      border-radius: 5px;
-      margin: 0 0 0 -20px;
+      margin: 0 0 0 -25px;
       background: $bg;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
@@ -339,6 +343,9 @@ footer img {
       transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
       background 0.3s linear;
+      -webkit-box-shadow: inset 6px 7px 5px 0px rgba(0,0,0,0.43);
+      -moz-box-shadow: inset 6px 7px 5px 0px rgba(0,0,0,0.43);
+      box-shadow: inset 5px 2px 4px 0px rgba(0,0,0,0.30);
     }
     
     #menu li

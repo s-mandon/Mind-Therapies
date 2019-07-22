@@ -121,10 +121,7 @@ nav {
 
 .carousel-inner {
   font-size: 12px;
-  line-height: 15px;
-  -webkit-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5); }
+  line-height: 15px; }
 
 .carousel {
   text-align: center;
@@ -133,17 +130,7 @@ nav {
 .testimonial {
   max-width: 100%;
   max-height: auto;
-  padding: 20px;
-  border-radius: 5px; }
-
-.test-1 {
-  background: #c3dfe0; }
-
-.test-2 {
-  background: #f2d3b3; }
-
-.test-3 {
-  background: #ddd4cf; }
+  padding: 20px; }
 
 footer {
   display: -webkit-box;
@@ -244,7 +231,7 @@ footer img {
   z-index: 1;
   position: fixed;
   width: 150px;
-  height: 200px;
+  padding: 10px;
   margin: 0 0 0 -25px;
   background: #F7F6FC;
   list-style-type: none;
@@ -268,7 +255,7 @@ footer img {
 #menu li {
   text-align: left;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: #90c8c5;
   line-height: 35px; }
 
@@ -283,7 +270,8 @@ footer img {
 
 #menu a {
   text-decoration: none;
-  padding: 0; }
+  padding: 0;
+  color: #90c8c5; }
 
 /* to slide the menu in from the left */
 #menuToggle input:checked ~ ul {

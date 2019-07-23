@@ -236,8 +236,9 @@ footer {
     margin: 0; }
 
 footer img {
-  width: 20%;
-  padding: 10px; }
+  width: 300px;
+  margin: 10px;
+  padding-left: 50px; }
 
 #menuToggle {
   display: block;
@@ -323,7 +324,6 @@ footer img {
   width: 150px;
   padding: 10px;
   margin: 0 0 0 -25px;
-  background: #F7F6FC;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -337,7 +337,23 @@ footer img {
   transition: background 0.3s linear, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   -o-transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s linear;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s linear;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s linear, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.3s linear, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+
+.mobmenu {
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s; }
+
+.mobmenu.opaque {
+  background-color: #F7F6FC;
+  -webkit-transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
   -webkit-box-shadow: inset 6px 7px 5px 0px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: inset 6px 7px 5px 0px rgba(0, 0, 0, 0.43);
   box-shadow: inset 5px 2px 4px 0px rgba(0, 0, 0, 0.3); }
@@ -345,18 +361,9 @@ footer img {
 #menu li {
   text-align: left;
   padding-left: 10px;
-  font-size: 18px;
+  font-size: 16px;
   color: #90c8c5;
   line-height: 35px; }
-
-#menu.scrolled {
-  background: #277752;
-  -webkit-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-  transition: 0.3s linear;
-  -webkit-box-shadow: inset 0px 4px 12px -3px #383838;
-  -moz-box-shadow: inset 0px 4px 12px -3px #383838;
-  box-shadow: inset 0px 4px 12px -3px #383838; }
 
 #menu a {
   text-decoration: none;
@@ -477,7 +484,7 @@ footer img {
   text-align: left;
   cursor: pointer; }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   .desktop {
     display: none; }
   .mobile {
@@ -485,4 +492,7 @@ footer img {
   .navbar {
     z-index: 2;
     position: fixed;
-    height: 60px; } }
+    height: 60px; }
+  .banner {
+    background-image: url("/resources/bg5.png");
+    height: 300px; } }

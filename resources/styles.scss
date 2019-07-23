@@ -254,8 +254,9 @@ footer {
 }
 
 footer img {
-  width: 20%;
-  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  padding-left: 50px;
 }
 
 #menuToggle
@@ -348,7 +349,6 @@ footer img {
       width: 150px;
       padding: 10px;
       margin: 0 0 0 -25px;
-      background: $bg;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       /* to stop flickering of text in safari */
@@ -356,6 +356,17 @@ footer img {
       transform: translate(-100%, 0);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
       background 0.3s linear;
+    }
+
+    .mobmenu { 
+      background-color: rgba(255,255,255,0);
+      transition: background-color 0.3s linear 0s,
+      box-shadow 0.3s linear 0s;
+    }
+    .mobmenu.opaque { 
+      background-color: $bg;
+      transition: background-color 0.3s linear 0s,
+      box-shadow 0.3s linear 0s;
       -webkit-box-shadow: inset 6px 7px 5px 0px rgba(0,0,0,0.43);
       -moz-box-shadow: inset 6px 7px 5px 0px rgba(0,0,0,0.43);
       box-shadow: inset 5px 2px 4px 0px rgba(0,0,0,0.30);
@@ -365,18 +376,10 @@ footer img {
     {
       text-align: left;
       padding-left: 10px;
-      font-size: 18px;
+      font-size: 16px;
       color: $main-blue;
       line-height: 35px;
     }
-
-   #menu.scrolled {
-      background: #277752;
-      transition: 0.3s linear;
-      -webkit-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
-      -moz-box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
-      box-shadow: inset 0px 4px 12px -3px rgba(56,56,56,1);
-      }
 
 
     #menu a {
@@ -494,7 +497,7 @@ footer img {
   cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
   .desktop {
     display: none;
@@ -508,5 +511,10 @@ footer img {
     z-index: 2;
     position: fixed;
     height: 60px;
+}
+
+.banner {
+  background-image: url("/resources/bg5.png");
+  height: 300px;
 }
 }

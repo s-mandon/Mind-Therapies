@@ -12,6 +12,10 @@ $text: #545454;
     box-sizing: border-box;
 }
 
+.mobile {
+  display: none;
+}
+
 body {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
@@ -29,6 +33,12 @@ h1, h2 {
     
 }
 
+h3 {
+  font-weight: 500;
+  padding: 0;
+  margin: 5px;
+}
+
 h4, h6 {
   font-weight: bold;
   line-height: 10px;
@@ -40,20 +50,43 @@ nav {
   justify-content: space-between;
 }
 
+.navbar-fixed-top { 
+  background-color: rgba(255,255,255,0);
+  transition: background-color 0.3s linear 0s;
+}
+.navbar-fixed-top.opaque { 
+  background-color: $bg;
+  transition: background-color 0.3s linear 0s;
+  -webkit-box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
+  box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
+}
+
 .navbar {
     z-index: 2;
-    background: $bg;
     position: fixed;
     height: 60px;
-    -webkit-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
-    box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
 }
   .nav-item {
   img {
     max-width: 40px;
     padding-top: 5px;
     }
+}
+
+.nav-link li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  padding-right: 30px;
+  padding-top: 5px;
+}
+
+.nav-link a {
+  color: #729B9C;
+  font-size: 12px;
 }
 
 .nav-item li {
@@ -67,10 +100,6 @@ nav {
   justify-content: space-between;
 }
 
-.main-container {
-    margin-top: 60px;
-}
-
 .container {
   max-width: 100%;
   padding: 10px;
@@ -81,22 +110,63 @@ nav {
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
-    height: 200px;
-    padding: 0;
+    height: 700px;
     margin: 0 auto;
     background-image: url("/resources/bg5.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     img {
-        max-width: 100%;
+        max-width: 100%; 
+        }
+      
 }
+
+.bio {
+  max-width: 400px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 .about {
-    max-width: 400px;
+    max-width: 600px;
     text-align: center;
     padding: 10px;
+}
+
+.row {
+  margin: 0 auto;
+  text-align: center;
+  height: 230px;
+
+}
+
+.col {
+  background: $fade-blue;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.services {
+  background: #ddd4cf;
+}
+
+.workshops {
+  background: $fade-orange;
+}
+
+.payment {
+  background: #e9ecee;
+}
+
+.box {
+  -webkit-box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
+  box-shadow: 0px 8px 10px -7px rgba(0,0,0,0.5);
 }
 
 .carousel-control {
@@ -127,7 +197,6 @@ nav {
   line-height: 15px;
 }
 
-
 .carousel {
     text-align: center;
     max-width: 500px;
@@ -144,10 +213,8 @@ nav {
 footer {
     display: flex;
     vertical-align: middle;
-    height: 60px;
     background: #DEDCE6;
     width: 100%;
-    padding: 10px;
 
     ul {
       list-style: none;
@@ -157,7 +224,8 @@ footer {
 }
 
 footer img {
-  width: 60%;
+  width: 20%;
+  padding: 10px;
 }
 
 #menuToggle
@@ -394,4 +462,25 @@ footer img {
   padding: 4px 12px;
   text-align: left;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .navbar {
+    z-index: 2;
+    background: $bg;
+    position: fixed;
+    height: 60px;
+    -webkit-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 10px -7px rgba(0,0,0,0.5);
+}
 }

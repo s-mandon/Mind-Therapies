@@ -89,6 +89,21 @@ nav {
   color: #729B9C;
   font-size: 16px; }
 
+a {
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear; }
+
+a:focus, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  color: #9c9a9d;
+  -webkit-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-decoration: none; }
+
 .nav-item li {
   list-style: none; }
 
@@ -147,11 +162,11 @@ nav {
 .row {
   margin: 0 auto;
   text-align: center;
-  height: 230px; }
+  height: 270px; }
 
 .col {
   background: #c3dfe0;
-  height: 200px;
+  height: 230px;
   padding: 10px;
   margin: 10px;
   border-radius: 5px; }

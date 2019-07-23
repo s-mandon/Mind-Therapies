@@ -30,6 +30,12 @@ h4, h6 {
   font-weight: bold;
   line-height: 10px; }
 
+hr {
+  background: #90c8c5;
+  border: 1px solid #90c8c5;
+  max-width: 200px;
+  margin: 0 auto; }
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,15 +50,19 @@ nav {
 
 .navbar-fixed-top {
   background-color: rgba(255, 255, 255, 0);
-  -webkit-transition: background-color 0.3s linear 0s;
-  -o-transition: background-color 0.3s linear 0s;
-  transition: background-color 0.3s linear 0s; }
+  -webkit-transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s; }
 
 .navbar-fixed-top.opaque {
   background-color: #F7F6FC;
-  -webkit-transition: background-color 0.3s linear 0s;
-  -o-transition: background-color 0.3s linear 0s;
-  transition: background-color 0.3s linear 0s;
+  -webkit-transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
+  -o-transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s;
+  transition: background-color 0.3s linear 0s, box-shadow 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
   -webkit-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 8px 10px -7px rgba(0, 0, 0, 0.5); }
@@ -72,12 +82,12 @@ nav {
   padding: 0;
   display: block;
   float: left;
-  padding-right: 30px;
+  padding-right: 40px;
   padding-top: 5px; }
 
 .nav-link a {
   color: #729B9C;
-  font-size: 12px; }
+  font-size: 16px; }
 
 .nav-item li {
   list-style: none; }
@@ -118,11 +128,16 @@ nav {
     max-width: 100%; }
 
 .bio {
-  max-width: 400px;
+  max-width: 500px;
   padding: 10px;
   font-size: 15px;
-  text-align: center;
-  padding-bottom: 100px; }
+  text-align: center; }
+
+.abt, .ty {
+  max-width: 80px; }
+
+.break {
+  margin-bottom: 100px; }
 
 .about {
   max-width: 600px;
@@ -454,9 +469,5 @@ footer img {
     display: block; }
   .navbar {
     z-index: 2;
-    background: #F7F6FC;
     position: fixed;
-    height: 60px;
-    -webkit-box-shadow: 0px 5px 10px -7px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 5px 10px -7px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 5px 10px -7px rgba(0, 0, 0, 0.5); } }
+    height: 60px; } }
